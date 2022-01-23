@@ -1243,10 +1243,10 @@ a {
 }
 
 #product-tab .container {
-    max-width: 1742px;
+    max-width: 1550px;
     width: auto;
     margin: auto;
-    padding: 0 20px;
+    padding: 0 10px;
 }
 
 .product-inner {
@@ -1302,3 +1302,333 @@ a {
  .product-inner-link:hover {
      color: #222222;
  }
+ /* ---------------------------------- */
+
+ 
+ .product-furniture-list{
+     width: 100%;
+     height: 100%;
+     display: grid;
+     grid-template-columns: repeat(5,277px);
+     grid-template-rows: auto auto;
+     grid-gap: 30px;
+ }
+ 
+ .product-furniture-inner-img{
+     width: 100%;
+     height: 330px;
+     background-image: url('https://rubiktheme.com/demo/rb_stark_demo/25-home_default/hummingbird-printed-t-shirt.jpg');
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    }
+.first:hover{
+    background-image: url('https://rubiktheme.com/demo/rb_stark_demo/24-home_default/hummingbird-printed-t-shirt.jpg');
+}
+.second{
+    background-image: url('https://rubiktheme.com/demo/rb_stark_demo/27-home_default/brown-bear-printed-sweater.jpg');
+}
+.second:hover{
+    background-image: url('https://rubiktheme.com/demo/rb_stark_demo/28-home_default/brown-bear-printed-sweater.jpg');
+}
+.third{
+    background-image: url('https://rubiktheme.com/demo/rb_stark_demo/30-home_default/the-best-is-yet-to-come-framed-poster.jpg');
+}
+.third:hover{
+    background-image: url('https://rubiktheme.com/demo/rb_stark_demo/31-home_default/the-best-is-yet-to-come-framed-poster.jpg');
+}
+.fourth{
+    background-image: url('https://rubiktheme.com/demo/rb_stark_demo/33-home_default/the-adventure-begins-framed-poster.jpg');
+}
+.fourth:hover{
+    background-image: url('https://rubiktheme.com/demo/rb_stark_demo/34-home_default/the-adventure-begins-framed-poster.jpg');
+}
+.fiveth {
+    background-image: url('https://rubiktheme.com/demo/rb_stark_demo/36-home_default/today-is-a-good-day-framed-poster.jpg');
+}
+
+.fiveth:hover {
+    background-image: url('https://rubiktheme.com/demo/rb_stark_demo/37-home_default/today-is-a-good-day-framed-poster.jpg');
+}
+.sixth{
+    background-image: url('https://rubiktheme.com/demo/rb_stark_demo/41-home_default/mug-the-best-is-yet-to-come.jpg');
+}
+.sixth:hover{
+    background-image: url('https://rubiktheme.com/demo/rb_stark_demo/42-home_default/mug-the-best-is-yet-to-come.jpg');
+}
+.seventh{
+    background-image: url('https://rubiktheme.com/demo/rb_stark_demo/43-home_default/mug-the-adventure-begins.jpg');
+}
+.seventh:hover{
+    background-image: url('https://rubiktheme.com/demo/rb_stark_demo/44-home_default/mug-the-adventure-begins.jpg');
+}
+.eightth{
+    background-image: url('https://rubiktheme.com/demo/rb_stark_demo/46-home_default/mug-today-is-a-good-day.jpg');
+}
+.eightth:hover{
+    background-image: url('https://rubiktheme.com/demo/rb_stark_demo/45-home_default/mug-today-is-a-good-day.jpg');
+}
+.nineth{
+    background-image: url('https://rubiktheme.com/demo/rb_stark_demo/53-home_default/mountain-fox-cushion.jpg');
+}
+.nineth:hover{
+    background-image: url('https://rubiktheme.com/demo/rb_stark_demo/54-home_default/mountain-fox-cushion.jpg');
+}
+.tenth{
+    background-image: url('https://rubiktheme.com/demo/rb_stark_demo/57-home_default/brown-bear-cushion.jpg');
+}
+.tenth:hover{
+    background-image: url('https://rubiktheme.com/demo/rb_stark_demo/56-home_default/brown-bear-cushion.jpg');
+}
+.new-product{
+    position: absolute;
+    top: 10px;
+    left: 20px;
+    padding: 0 6px ;
+    margin: 2px 0;
+    color: #FFF;
+    background: #2fb5d2;
+    font-size: 10px;
+    font-weight: 400;
+    line-height: 20px;
+}
+.sale{
+    padding: 0 6px;
+    background-color: #ff0000;
+    height: 100%;
+    display: inline-block;
+    position: relative;
+    left: -6px;
+}
+.products-about{
+    padding: 20px 0;
+}
+.rating-parag{
+    color: #a3a3a3;
+    font-size: 14px;
+    font-family: "Barlow Condensed";
+    font-weight: 600;
+
+    
+}
+.rating-parag:hover {
+    color: #D99216;
+}
+.bxs-star{
+    font-size: 14px;
+    color: #D8D8D8;
+}
+
+.yellow{
+    
+    color: #fcbe32;
+}
+.products-furniture-title{
+    color: #222;
+    font-weight: 400;
+    overflow: hidden;
+    line-height: 23px;
+    text-transform: uppercase;
+    font-size: 15px;
+}
+.products-furniture-title:hover{
+    color: #D99216;
+}
+.product-price-main{
+    color: #222222;
+    font-weight: 700;
+    font-size: 16px;
+
+}
+.real-money{
+    text-decoration: line-through;color: #888;
+    font-size: 14px;
+    font-weight: 400;
+}
+.product-btns {
+    position: absolute;
+    bottom: 6%;
+    left: 60px;
+}
+
+.product-btn {
+    cursor: pointer;
+    border: none;
+    background-color: #000000de;
+    margin-right: 6px;
+    padding: 8px;
+    font-size: 18px;
+    color: #fff;
+    width: 50px;
+    height: 50px;
+    opacity: 0;
+    transition: all 0.1s ease;
+}
+
+.product-btn .bx {
+    font-size: 20px;
+    position: relative;
+    top: 3px;
+}
+
+ .product-btn:nth-child(1) {
+    transform: translateY(-19px);
+    transition:transform 0.1s ease-in-out;
+}
+
+.product-btn:nth-child(2) {
+    transform: translateY(-16px);
+    transition: transform 0.3s ease-in-out;
+}
+
+.product-btn:nth-child(3) {
+    transform: translateY(-13px);
+    transition: transform 0.6s ease-in-out;
+}
+
+.product-btn:hover {
+    background-color: #d78f0e;
+}
+
+.product-furniture-inner-img:hover .product-btn {
+    opacity: 1;
+    transform: translateY(0px);
+} 
+.view-more{
+    background: transparent;
+    border: 1px solid #999;
+    height: 60px;
+    min-width: 280px;
+    line-height: 60px;
+    text-transform: uppercase;
+    padding: 0 50px;
+    margin: 20px 0 20px;
+    font-size: 16px;
+    letter-spacing: 3px;
+    color: #222;
+    font-weight: 600;
+    font-family: "Barlow Condensed",
+    sans-serif;
+    
+}
+
+.view-more:hover{
+    background-color: #D88F0F;
+    color: #fff;
+    border-color:transparent ;
+}
+.view-more-box{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin: 20px 0 60px;
+    height: 100px;
+}
+#widget-wrap{
+    width: 100%;
+}
+#widget-wrap .container{
+        max-width: 1550px;
+        width: auto;
+        margin: auto;
+        padding: 0 10px;
+}
+.widget-inner{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+    margin-bottom: 50px;
+}
+.widget-inner-text{
+    text-transform: capitalize;
+    font-size: 48px;
+    font-weight: 500;
+        font-family: "Barlow Condensed",
+        sans-serif;
+        color: #222;
+}
+.widget-parag{
+    font-size: 16px;
+    color: #666;
+    font-weight: 400;
+    line-height: 23px;
+}
+.widget-content-box{
+    width: 100%;
+}
+.widget-content-list{
+    width: 100%;
+}
+.widget-content-items{
+    width: 450px;
+}
+.img-widget-box{
+    width: 450px;
+    height: 300px;
+    overflow: hidden;
+}
+.widget-content-img{
+    width: 100%;
+    height: 100%;
+    transform: scale(1) rotate(0);
+    transition: all 1s ease;
+}
+.img-widget-box:hover .widget-content-img{
+    transform: scale(1.2) rotate(5deg);
+
+}
+.widget-about{
+    font-size: 18px;
+    color: #222;
+    line-height: 60px;
+}
+.widget-about:hover{
+    color: #;
+}
+.widget-date{
+    font-size: 12px;
+    color: #666;
+    display: block;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+}
+.widget-text{
+    font-size: 14px;
+    color: #666;
+    margin-bottom: 25px;
+}
+.read-more{
+    font-size: 14px;
+    color: #222;
+    padding-bottom: 3px;
+    border-bottom: solid 1px #222 ;
+}
+.read-more:hover{
+    color: #d88f0f;
+    border-color: #d88f0f;
+}
+.view-all-box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    margin: 30px 0;
+}
+.view-all{
+    padding: 15px 40px;
+    color: #222;
+    font-size: 16px;
+        border: 1px solid #e6e6e6;
+        text-transform: uppercase;
+        font-weight: 700;
+        padding: 15px 50px;
+        letter-spacing: 1px;
+        background-color: #fff;
+}
+.view-all:hover{
+    background-color: #222;
+    border-color:transparent;
+    color: #fff;
+}
