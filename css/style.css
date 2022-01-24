@@ -44,6 +44,7 @@ ul {
     background-color: transparent;
     border: none;
     position: relative;
+    cursor: pointer;
 }
 
 a {
@@ -173,6 +174,8 @@ a {
     left: -320%;
     background-color: #fff;
     display: none;
+    z-index: 100;
+
 }
 
 .category-down-list {
@@ -436,6 +439,7 @@ a {
     left: -780%;
     background-color: #fff;
     display: none;
+    z-index: 100;
 }
 
 .shop-down-lists {
@@ -1273,10 +1277,12 @@ a {
     font-weight: 600;
     position: relative;
 }
-.product-inner-items:first-child .product-inner-link{
+
+.product-inner-items:first-child .product-inner-link {
     color: #222222;
 }
- .product-inner-items:first-child .product-inner-link::after {
+
+.product-inner-items:first-child .product-inner-link::after {
     content: "";
     background: #e8bc6f;
     position: absolute;
@@ -1286,63 +1292,75 @@ a {
     left: 0;
     transition: all 0.3s;
 }
-.product-inner-link::after {
-     content: "";
-     background: #e8bc6f;
-     position: absolute;
-     width: 0;
-     height: 3px;
-     bottom: -5px;
-     left: 0;
-     transition: all 0.3s;
- }
- .product-inner-link:hover::after{
-     width: 100%;
- }
- .product-inner-link:hover {
-     color: #222222;
- }
- /* ---------------------------------- */
 
- 
- .product-furniture-list{
-     width: 100%;
-     height: 100%;
-     display: grid;
-     grid-template-columns: repeat(5,277px);
-     grid-template-rows: auto auto;
-     grid-gap: 30px;
- }
- 
- .product-furniture-inner-img{
-     width: 100%;
-     height: 330px;
-     background-image: url('https://rubiktheme.com/demo/rb_stark_demo/25-home_default/hummingbird-printed-t-shirt.jpg');
+.product-inner-link::after {
+    content: "";
+    background: #e8bc6f;
+    position: absolute;
+    width: 0;
+    height: 3px;
+    bottom: -5px;
+    left: 0;
+    transition: all 0.3s;
+}
+
+.product-inner-link:hover::after {
+    width: 100%;
+}
+
+.product-inner-link:hover {
+    color: #222222;
+}
+
+/* ---------------------------------- */
+
+
+.product-furniture-list {
+    width: 100%;
+    height: 100%;
+    display: grid;
+    grid-template-columns: repeat(5, 277px);
+    grid-template-rows: auto auto;
+    grid-gap: 30px;
+}
+
+.product-furniture-inner-img {
+    width: 100%;
+    height: 330px;
+    background-image: url('https://rubiktheme.com/demo/rb_stark_demo/25-home_default/hummingbird-printed-t-shirt.jpg');
     background-size: cover;
     background-position: center;
     position: relative;
-    }
-.first:hover{
+}
+
+.first:hover {
     background-image: url('https://rubiktheme.com/demo/rb_stark_demo/24-home_default/hummingbird-printed-t-shirt.jpg');
 }
-.second{
+
+.second {
     background-image: url('https://rubiktheme.com/demo/rb_stark_demo/27-home_default/brown-bear-printed-sweater.jpg');
 }
-.second:hover{
+
+.second:hover {
     background-image: url('https://rubiktheme.com/demo/rb_stark_demo/28-home_default/brown-bear-printed-sweater.jpg');
 }
-.third{
+
+.third {
     background-image: url('https://rubiktheme.com/demo/rb_stark_demo/30-home_default/the-best-is-yet-to-come-framed-poster.jpg');
 }
-.third:hover{
+
+.third:hover {
     background-image: url('https://rubiktheme.com/demo/rb_stark_demo/31-home_default/the-best-is-yet-to-come-framed-poster.jpg');
 }
-.fourth{
+
+.fourth {
     background-image: url('https://rubiktheme.com/demo/rb_stark_demo/33-home_default/the-adventure-begins-framed-poster.jpg');
 }
-.fourth:hover{
+
+.fourth:hover {
     background-image: url('https://rubiktheme.com/demo/rb_stark_demo/34-home_default/the-adventure-begins-framed-poster.jpg');
 }
+
 .fiveth {
     background-image: url('https://rubiktheme.com/demo/rb_stark_demo/36-home_default/today-is-a-good-day-framed-poster.jpg');
 }
@@ -1350,41 +1368,52 @@ a {
 .fiveth:hover {
     background-image: url('https://rubiktheme.com/demo/rb_stark_demo/37-home_default/today-is-a-good-day-framed-poster.jpg');
 }
-.sixth{
+
+.sixth {
     background-image: url('https://rubiktheme.com/demo/rb_stark_demo/41-home_default/mug-the-best-is-yet-to-come.jpg');
 }
-.sixth:hover{
+
+.sixth:hover {
     background-image: url('https://rubiktheme.com/demo/rb_stark_demo/42-home_default/mug-the-best-is-yet-to-come.jpg');
 }
-.seventh{
+
+.seventh {
     background-image: url('https://rubiktheme.com/demo/rb_stark_demo/43-home_default/mug-the-adventure-begins.jpg');
 }
-.seventh:hover{
+
+.seventh:hover {
     background-image: url('https://rubiktheme.com/demo/rb_stark_demo/44-home_default/mug-the-adventure-begins.jpg');
 }
-.eightth{
+
+.eightth {
     background-image: url('https://rubiktheme.com/demo/rb_stark_demo/46-home_default/mug-today-is-a-good-day.jpg');
 }
-.eightth:hover{
+
+.eightth:hover {
     background-image: url('https://rubiktheme.com/demo/rb_stark_demo/45-home_default/mug-today-is-a-good-day.jpg');
 }
-.nineth{
+
+.nineth {
     background-image: url('https://rubiktheme.com/demo/rb_stark_demo/53-home_default/mountain-fox-cushion.jpg');
 }
-.nineth:hover{
+
+.nineth:hover {
     background-image: url('https://rubiktheme.com/demo/rb_stark_demo/54-home_default/mountain-fox-cushion.jpg');
 }
-.tenth{
+
+.tenth {
     background-image: url('https://rubiktheme.com/demo/rb_stark_demo/57-home_default/brown-bear-cushion.jpg');
 }
-.tenth:hover{
+
+.tenth:hover {
     background-image: url('https://rubiktheme.com/demo/rb_stark_demo/56-home_default/brown-bear-cushion.jpg');
 }
-.new-product{
+
+.new-product {
     position: absolute;
     top: 10px;
     left: 20px;
-    padding: 0 6px ;
+    padding: 0 6px;
     margin: 2px 0;
     color: #FFF;
     background: #2fb5d2;
@@ -1392,7 +1421,8 @@ a {
     font-weight: 400;
     line-height: 20px;
 }
-.sale{
+
+.sale {
     padding: 0 6px;
     background-color: #ff0000;
     height: 100%;
@@ -1400,30 +1430,35 @@ a {
     position: relative;
     left: -6px;
 }
-.products-about{
+
+.products-about {
     padding: 20px 0;
 }
-.rating-parag{
+
+.rating-parag {
     color: #a3a3a3;
     font-size: 14px;
     font-family: "Barlow Condensed";
     font-weight: 600;
 
-    
+
 }
+
 .rating-parag:hover {
     color: #D99216;
 }
-.bxs-star{
+
+.bxs-star {
     font-size: 14px;
     color: #D8D8D8;
 }
 
-.yellow{
-    
+.yellow {
+
     color: #fcbe32;
 }
-.products-furniture-title{
+
+.products-furniture-title {
     color: #222;
     font-weight: 400;
     overflow: hidden;
@@ -1431,20 +1466,25 @@ a {
     text-transform: uppercase;
     font-size: 15px;
 }
-.products-furniture-title:hover{
+
+.products-furniture-title:hover {
     color: #D99216;
 }
-.product-price-main{
+
+.product-price-main {
     color: #222222;
     font-weight: 700;
     font-size: 16px;
 
 }
-.real-money{
-    text-decoration: line-through;color: #888;
+
+.real-money {
+    text-decoration: line-through;
+    color: #888;
     font-size: 14px;
     font-weight: 400;
 }
+
 .product-btns {
     position: absolute;
     bottom: 6%;
@@ -1471,9 +1511,9 @@ a {
     top: 3px;
 }
 
- .product-btn:nth-child(1) {
+.product-btn:nth-child(1) {
     transform: translateY(-19px);
-    transition:transform 0.1s ease-in-out;
+    transition: transform 0.1s ease-in-out;
 }
 
 .product-btn:nth-child(2) {
@@ -1493,8 +1533,9 @@ a {
 .product-furniture-inner-img:hover .product-btn {
     opacity: 1;
     transform: translateY(0px);
-} 
-.view-more{
+}
+
+.view-more {
     background: transparent;
     border: 1px solid #999;
     height: 60px;
@@ -1508,32 +1549,36 @@ a {
     color: #222;
     font-weight: 600;
     font-family: "Barlow Condensed",
-    sans-serif;
-    
+        sans-serif;
+
 }
 
-.view-more:hover{
+.view-more:hover {
     background-color: #D88F0F;
     color: #fff;
-    border-color:transparent ;
+    border-color: transparent;
 }
-.view-more-box{
+
+.view-more-box {
     width: 100%;
     display: flex;
     justify-content: center;
     margin: 20px 0 60px;
     height: 100px;
 }
-#widget-wrap{
+
+#widget-wrap {
     width: 100%;
 }
-#widget-wrap .container{
-        max-width: 1550px;
-        width: auto;
-        margin: auto;
-        padding: 0 10px;
+
+#widget-wrap .container {
+    max-width: 1550px;
+    width: auto;
+    margin: auto;
+    padding: 0 10px;
 }
-.widget-inner{
+
+.widget-inner {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -1541,94 +1586,217 @@ a {
     width: 100%;
     margin-bottom: 50px;
 }
-.widget-inner-text{
+
+.widget-inner-text {
     text-transform: capitalize;
     font-size: 48px;
     font-weight: 500;
-        font-family: "Barlow Condensed",
+    font-family: "Barlow Condensed",
         sans-serif;
-        color: #222;
+    color: #222;
 }
-.widget-parag{
+
+.widget-parag {
     font-size: 16px;
     color: #666;
     font-weight: 400;
     line-height: 23px;
 }
-.widget-content-box{
+
+.widget-content-box {
     width: 100%;
 }
-.widget-content-list{
+
+.widget-content-list {
     width: 100%;
 }
-.widget-content-items{
+
+.widget-content-items {
     width: 450px;
 }
-.img-widget-box{
+
+.img-widget-box {
     width: 450px;
     height: 300px;
     overflow: hidden;
 }
-.widget-content-img{
+
+.widget-content-img {
     width: 100%;
     height: 100%;
     transform: scale(1) rotate(0);
     transition: all 1s ease;
 }
-.img-widget-box:hover .widget-content-img{
+
+.img-widget-box:hover .widget-content-img {
     transform: scale(1.2) rotate(5deg);
 
 }
-.widget-about{
+
+.widget-about {
     font-size: 18px;
     color: #222;
     line-height: 60px;
 }
-.widget-about:hover{
+
+.widget-about:hover {
     color: #d88f0f;
 }
-.widget-date{
+
+.widget-date {
     font-size: 12px;
     color: #666;
     display: block;
     margin-bottom: 20px;
     text-transform: uppercase;
 }
-.widget-text{
+
+.widget-text {
     font-size: 14px;
     color: #666;
     margin-bottom: 25px;
 }
-.read-more{
+
+.read-more {
     font-size: 14px;
     color: #222;
     padding-bottom: 3px;
-    border-bottom: solid 1px #222 ;
+    border-bottom: solid 1px #222;
 }
-.read-more:hover{
+
+.read-more:hover {
     color: #d88f0f;
     border-color: #d88f0f;
 }
-.view-all-box{
+
+.view-all-box {
     display: flex;
     justify-content: center;
     align-items: center;
     width: 100%;
-    margin: 30px 0;
+    margin: 30px 0 80px;
 }
-.view-all{
+
+.view-all {
     padding: 15px 40px;
     color: #222;
     font-size: 16px;
-        border: 1px solid #e6e6e6;
-        text-transform: uppercase;
-        font-weight: 700;
-        padding: 15px 50px;
-        letter-spacing: 1px;
-        background-color: #fff;
+    border: 1px solid #e6e6e6;
+    text-transform: uppercase;
+    font-weight: 700;
+    padding: 15px 50px;
+    letter-spacing: 1px;
+    background-color: #fff;
 }
-.view-all:hover{
+
+.view-all:hover {
     background-color: #222;
-    border-color:transparent;
+    border-color: transparent;
     color: #fff;
+}
+
+#site-footer {
+    background-color: #23282d;
+}
+
+.footer-inner {
+    padding: 100px 30px 50px 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-bottom: 1px solid #4d4c4c;
+}
+
+.footer-form {
+    margin: 40px 36px;
+    height: 55px;
+    background-color: #fff;
+}
+
+.form-about {
+    padding: 0 30px;
+    line-height: 55px;
+    font-size: 15px;
+    font-weight: 600;
+    color: #222;
+    text-transform: uppercase;
+    border-right: 1px solid #e6e6e6;
+}
+
+.footer-input {
+    border: 1px solid #FFF;
+    color: #999;
+    background-color: #FFF;
+    height: 55px;
+    font-size: 14px;
+    width: 400px;
+    padding: 0 12px;
+    outline: none;
+}
+
+.footer-btn {
+    border: none;
+    cursor: pointer;
+    padding: 0 20px;
+    text-align: center;
+    background-color: #000;
+    color: #fff;
+    text-transform: uppercase;
+    width: 170px;
+}
+
+.footer-btn:hover {
+    background-color: #d78f0e
+}
+
+.socials-lists {
+    padding: 16px 0px;
+    margin-bottom: 80px;
+}
+
+.socials-link {
+    text-decoration: none;
+    color: #fff;
+    font-size: 26px;
+    margin-right: 20px;
+}
+
+.footer-list {
+    padding: 16px 0px;
+}
+
+.footer-link {
+    text-decoration: none;
+    text-transform: uppercase;
+    font-family: "Barlow Condensed", sans-serif;
+    color: #FFF;
+}
+
+.footer-item {
+    margin-right: 26px;
+}
+
+.footer-link:hover {
+    color: #d78f0e;
+}
+
+.footer-end {
+    padding: 30px 120px;
+}
+
+.copyright {
+    color: #fff;
+}
+
+#logo-partner {
+    background-color: #F2F2F2;
+    height: 150px;
+    width: 100%;
+    padding: 20px 0;
+}
+
+#logo-partner .container {
+    width: auto;
+    max-width: 1500px;
+    padding: 0 80px;
 }
